@@ -41,14 +41,13 @@ func player_info(name,id):
 	if multiplayer.is_server():
 		for i in PlayerHandle.players:
 			player_info.rpc(PlayerHandle.players[i].name, i)
-
-
+			
 #Inicia el juego al presionar el boton de iniciar 
 @rpc("any_peer", "call_local")
 func StartGame():
 	print("Game started" + %Player_name.text)
-	var game = load("res://Maps/Test_map.tscn").instantiate()
-	get_tree().root.add_child(game)
+	var carga = load("res://loading.tscn").instantiate()
+	get_tree().root.add_child(carga)
 	$Control.visible = false
 
 func _on_play_button_down():
@@ -60,7 +59,6 @@ func _on_play_button_down():
 	player_info(%Player_name.text, host_id)
 
 
-
 func _on_ip_text_submitted(new_string: String):
 	_on_join_pressed()
 
@@ -70,7 +68,13 @@ func _on_join_pressed():
 	peer.create_client(%IP_owner.text, port)
 	multiplayer.set_multiplayer_peer(peer)
 	
-
-
+#Al presionar el boton de test, inicia el juego	
+@rpc("any_peer", "call_local")
 func _on_button_pressed():
 	StartGame.rpc()
+	_on_play_button_down()
+
+#Al presionar un sprite, iniica el juego
+@rpc("any_peer", "call_local")
+func _on_sprite_button_pressed():
+	_on_button_pressed()
