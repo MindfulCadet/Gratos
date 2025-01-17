@@ -474,6 +474,7 @@ points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 46
 default_color = Color(0, 0, 0, 1)
 
 [node name="Personaje4" type="Button" parent="."]
+layout_mode = 0
 offset_left = 921.0
 offset_top = 225.0
 offset_right = 1086.0

@@ -4,6 +4,7 @@ extends Control
 @onready var texto = $Label
 var personajes = PlayerHandle.characters
 var tamaño = PlayerHandle.players.size()
+var posibilidades = [["Personaje1", "Personaje2"], ["Personaje1", "Personaje3"], ["Personaje1", "Personaje4"], ["Personaje2", "Personaje3"], ["Personaje2", "Personaje4"], ["Personaje3", "Personaje4"]]
 
 #Si se presiona el personaje se oculta el texto previo
 #e inicia la animación para confirmar la selección
@@ -48,6 +49,8 @@ func _on_no_pressed():
 #añade a una lista los personajes seleccionados
 @rpc("any_peer", "call_local")
 func deshabilitar(nro):
+	print("1343435254sda")
+	print(personajes)
 	if nro == 1:
 		$Personaje1.disabled = true
 		personajes.append("Personaje1")
@@ -71,12 +74,20 @@ func deshabilitar(nro):
 #revisa la lista para verificar que ambos jugadores hayan escogido personaje
 #si se cumple, avanza y muestra el juego
 func revision():
+	var cantidad = personajes.size()
 	if tamaño == 1:
 		var game = load("res://Maps/Test_map.tscn").instantiate()
 		get_tree().root.add_child(game)
 		$".".visible = false
-	elif tamaño == 2:
-		if "Personaje1" and "Personaje2" in personajes or "Personaje1" and "Personaje3" in personajes or "Personaje2" and "Personaje3" in personajes or "Personaje1" and "Personaje4" in personajes:
+	else:
+		if cantidad >= 2 and comprobar(personajes, posibilidades):
 			var game = load("res://Maps/Test_map.tscn").instantiate()
 			get_tree().root.add_child(game)
 			$".".visible = false
+
+func comprobar(grupo, posibilidades):
+	for i in posibilidades:
+		if i[0] in grupo and i[1] in grupo:
+			return true
+	return false
+	
