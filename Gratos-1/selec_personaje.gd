@@ -5,15 +5,11 @@ extends Control
 var personajes = PlayerHandle.characters
 var tamaño = PlayerHandle.players.size()
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Maps/Test_map.tscn")
-
 #Si se presiona el personaje se oculta el texto previo
 #e inicia la animación para confirmar la selección
 func _on_personaje_1_pressed():
 	texto.hide()
 	animacion.play("selection1")
-	
 
 func _on_personaje_2_pressed():
 	texto.hide()
@@ -22,6 +18,10 @@ func _on_personaje_2_pressed():
 func _on_personaje_3_pressed():
 	texto.hide()
 	animacion.play("selection3")
+	
+func _on_personaje_4_pressed():
+	texto.hide()
+	animacion.play("selection4")
 
 #Detiene la animación de confirmación y llama a la funcion de deshabilitar
 #los personajes seleccionados
@@ -35,6 +35,9 @@ func _on_si_pressed():
 	elif animacion.get_current_animation() == "selection3":
 		animacion.stop()
 		deshabilitar.rpc(3)
+	elif animacion.get_current_animation() == "selection4":
+		animacion.stop()
+		deshabilitar.rpc(4)
 
 #Detiene la animación de confirmación para poder seleccionar otro personaje
 func _on_no_pressed():
@@ -57,6 +60,11 @@ func deshabilitar(nro):
 		$Personaje3.disabled = true
 		personajes.append("Personaje3")
 		revision()
+	elif nro == 4:
+		$Personaje4.disabled = true
+		personajes.append("Personaje4")
+		revision()
+		
 
 #comprueba el tamaño del diccionario para saber la cantidad de jugadores
 #en caso de ser uno, pasa al juego, en caso de ser dos
@@ -67,8 +75,8 @@ func revision():
 		var game = load("res://Maps/Test_map.tscn").instantiate()
 		get_tree().root.add_child(game)
 		$".".visible = false
-	else:
-		if "Personaje1" and "Personaje2" in personajes or "Personaje1" and "Personaje3" in personajes or "Personaje2" and "Personaje3" in personajes:
+	elif tamaño == 2:
+		if "Personaje1" and "Personaje2" in personajes or "Personaje1" and "Personaje3" in personajes or "Personaje2" and "Personaje3" in personajes or "Personaje1" and "Personaje4" in personajes:
 			var game = load("res://Maps/Test_map.tscn").instantiate()
 			get_tree().root.add_child(game)
 			$".".visible = false

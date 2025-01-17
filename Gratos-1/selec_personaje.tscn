@@ -1,11 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://csyf614fi1bwu"]
+[gd_scene load_steps=15 format=3 uid="uid://csyf614fi1bwu"]
 
 [ext_resource type="Script" path="res://selec_personaje.gd" id="1_6tvf1"]
 [ext_resource type="Texture2D" uid="uid://ss40g1xwt757" path="res://fondo1.jpeg" id="1_s23wk"]
-[ext_resource type="Texture2D" uid="uid://bwjsyct25irn1" path="res://sample sprite.jpg" id="2_yoqyd"]
 [ext_resource type="FontFile" uid="uid://c1r6wut7sljrb" path="res://Fonts/ldfcomicsans-font/Minecraft.ttf" id="4_l8r70"]
 [ext_resource type="Texture2D" uid="uid://bjkhg0jk2ij81" path="res://Characters/World01_006_Witch.png" id="5_fkpaw"]
 [ext_resource type="Texture2D" uid="uid://bk33kldccv5xd" path="res://Characters/World01_007_Pirate.png" id="6_l2fwe"]
+[ext_resource type="Texture2D" uid="uid://cq2yjg4g0icol" path="res://Characters/World01_004_WailingPrince.png" id="7_34nie"]
 [ext_resource type="Texture2D" uid="uid://cxo0otdv43xv8" path="res://Characters/World04_003_ Outlaw.png" id="7_bs6ow"]
 [ext_resource type="Texture2D" uid="uid://dwqgln27reodu" path="res://finger.png" id="8_ylugc"]
 
@@ -315,12 +315,90 @@ tracks/5/keys = {
 "values": [true]
 }
 
+[sub_resource type="Animation" id="Animation_iknn4"]
+resource_name = "selection4"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("finger:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("finger:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.58825]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("finger:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.366667, 0.7, 1, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(990, 165), Vector2(990, 175), Vector2(990, 190), Vector2(990, 175), Vector2(990, 165)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("confirmacion:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Si:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("No:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1j2he"]
 _data = {
 "RESET": SubResource("Animation_qdv7c"),
 "selection1": SubResource("Animation_3b65o"),
 "selection2": SubResource("Animation_tsh8i"),
-"selection3": SubResource("Animation_2xd5u")
+"selection3": SubResource("Animation_2xd5u"),
+"selection4": SubResource("Animation_iknn4")
 }
 
 [node name="Selector" type="Control"]
@@ -338,23 +416,6 @@ offset_right = 1148.0
 offset_bottom = 649.0
 texture = ExtResource("1_s23wk")
 expand_mode = 1
-
-[node name="Personaje4" type="Sprite2D" parent="."]
-position = Vector2(1009, 342)
-scale = Vector2(0.11303, 0.184375)
-texture = ExtResource("2_yoqyd")
-
-[node name="Button4" type="Button" parent="Personaje4"]
-offset_left = -646.0
-offset_top = -651.0
-offset_right = 628.0
-offset_bottom = 645.0
-
-[node name="linea4" type="Line2D" parent="Personaje4"]
-position = Vector2(-1495.18, -1865.76)
-scale = Vector2(8.84721, 5.42373)
-points = PackedVector2Array(92, 228, 238, 228, 238, 462, 96, 462, 96, 229)
-default_color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -412,6 +473,20 @@ scale = Vector2(1.22891, 1)
 points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
 default_color = Color(0, 0, 0, 1)
 
+[node name="Personaje4" type="Button" parent="."]
+offset_left = 921.0
+offset_top = 225.0
+offset_right = 1086.0
+offset_bottom = 459.0
+icon = ExtResource("7_34nie")
+expand_icon = true
+
+[node name="linea4" type="Line2D" parent="Personaje4"]
+position = Vector2(-123, -230)
+scale = Vector2(1.22891, 1)
+points = PackedVector2Array(92, 228, 164.046, 228, 238, 228, 238, 462, 207.8, 462, 162.418, 462, 96, 462, 96, 229)
+default_color = Color(0, 0, 0, 1)
+
 [node name="finger" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(162, 165)
@@ -462,9 +537,9 @@ libraries = {
 "": SubResource("AnimationLibrary_1j2he")
 }
 
-[connection signal="pressed" from="Personaje4/Button4" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Personaje1" to="." method="_on_personaje_1_pressed"]
 [connection signal="pressed" from="Personaje2" to="." method="_on_personaje_2_pressed"]
 [connection signal="pressed" from="Personaje3" to="." method="_on_personaje_3_pressed"]
+[connection signal="pressed" from="Personaje4" to="." method="_on_personaje_4_pressed"]
 [connection signal="pressed" from="Si" to="." method="_on_si_pressed"]
 [connection signal="pressed" from="No" to="." method="_on_no_pressed"]
