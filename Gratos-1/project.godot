@@ -12,12 +12,22 @@ config_version=5
 
 config/name="RPG_Gratos"
 run/main_scene="res://Menu.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.svg"
 
 [autoload]
 
-PlayerHandle="*res://Player_handle.gd"
+PlayerHandle="*res://Global/Player_handle.gd"
+Music="*res://Global/Music.tscn"
+Manager="*res://Maps/Warp/manager.tscn"
+
+[editor]
+
+movie_writer/movie_file="C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Test.avi"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [rendering]
 
