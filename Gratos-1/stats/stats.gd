@@ -1,4 +1,5 @@
 extends CanvasLayer
+@export var img: Texture2D
 var clase: String
 # Devuelve una de las stats del personaje para verificar su valor
 func check_stats(stat:String = ""):
@@ -185,6 +186,7 @@ func _ready() -> void:
 	if clase == "barbaro": $Magia.visible = false
 	else: $Magia.visible = true
 	level_up(clase,get_parent().nivel)
+	$menu/iconimg.texture = img
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dov57pita5uig"]
+[gd_scene load_steps=19 format=3 uid="uid://dov57pita5uig"]
 
 [ext_resource type="Script" path="res://stats/stats.gd" id="1_5bxly"]
 [ext_resource type="Texture2D" uid="uid://dddsqcycif3ly" path="res://stats/ataque.png" id="1_oh1wn"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://lk215mrwtbwm" path="res://stats/vida.png" id="6_x5h7i"]
 [ext_resource type="FontFile" uid="uid://cjy11xjo0p2xe" path="res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="7_323co"]
 [ext_resource type="StyleBox" uid="uid://fctf1pb8qdsj" path="res://Textbox.tres" id="7_nvk2o"]
-[ext_resource type="Texture2D" uid="uid://b1m84sil4okhj" path="res://icon.svg" id="13_pwaln"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hy5d2"]
 bg_color = Color(0, 0, 0, 1)
@@ -241,9 +240,8 @@ layout_mode = 2
 text = "0"
 label_settings = ExtResource("1_vjejq")
 
-[node name="Sprite2D" type="Sprite2D" parent="menu"]
+[node name="iconimg" type="Sprite2D" parent="menu"]
 position = Vector2(411, 87)
-texture = ExtResource("13_pwaln")
 
 [node name="open" type="Button" parent="."]
 anchors_preset = -1
