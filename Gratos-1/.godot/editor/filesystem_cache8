@@ -1,25 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741022791
+::res://::1741040889
 Attack_list.gd::GDScript::-1::1741015116::0::1::::<>Node2D<>::
 fondo1.jpeg::CompressedTexture2D::1302363779075723380::1741015116::1741015254::1::::<><>::
 font.tres::LabelSettings::4028788023841613964::1741015116::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
 Game_control.gd::GDScript::-1::1741015116::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::4238159558433039039::1741015116::1741015253::1::::<><>::
-loading.gd::GDScript::-1::1741015116::0::1::::<>Control<>::
-loading.tscn::PackedScene::2196732059356608497::1741015116::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://loading.gd<>uid://ciqe3fbhyeytl::::res://Logo_UDO.svg.png
-Logo_UDO.svg.png::CompressedTexture2D::5367675295267681329::1741015116::1741015254::1::::<><>::
+loading.gd::GDScript::-1::1741029734::0::1::::<>Control<>::
+loading.tscn::PackedScene::2196732059356608497::1741040889::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://loading.gd<>uid://caq452jc63xbx::::res://Texture/fondoUDO.png<>uid://ch5svhkt3e5re::::res://font2.tres<>uid://drbv3t5dckmtn::::res://Texture/Logo.png
 Manager.gd::GDScript::-1::1741015116::0::1::::NPC<>Resource<>::
 Menu.gd::GDScript::-1::1741015116::0::1::::<>Node<>::
 Menu.tscn::PackedScene::5781549948801808367::1741015116::0::1::::<><>::res://Menu.gd<>uid://lc3vjdj412n1::::res://Texture/Misc/Main_Background.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png
 Node2D.gd::GDScript::-1::1741015116::0::1::::<>Node2D<>::
 Player_handle.gd::GDScript::-1::1741015116::0::1::::<>Node<>::
+font2.tres::LabelSettings::5327225397028399358::1741035236::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
 sample sprite.jpg::CompressedTexture2D::3950290544105030616::1741015116::1741015253::1::::<><>::
 selec_personaje.gd::GDScript::-1::1741015116::0::1::::<>Control<>::
 selec_personaje.tscn::PackedScene::6086145974188427188::1741015116::0::1::::<><>::res://selec_personaje.gd<>uid://ss40g1xwt757::::res://fondo1.jpeg<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://vbgpc8ntuntf::::res://Texture/Playable Characters/Character sprite/Knight/Knight-Idle.png<>uid://dpynry271fibe::::res://Texture/Playable Characters/Character sprite/Barbarian/Armored Axeman-Idle.png<>uid://c73ymqivr0hrj::::res://Texture/Playable Characters/Character sprite/Archer/Archer-Idle.png<>uid://dkj3kmaaw02pm::::res://Texture/Playable Characters/Character sprite/Wizard/Wizard-Idle.png<>uid://c2tsa4mu2lfvt::::res://Texture/Misc/finger.png
 Textbox.gd::GDScript::-1::1741015116::0::1::::<>CanvasLayer<>::
 Textbox.tres::StyleBoxFlat::356236914399706217::1741015116::0::1::::<><>::
 Textbox.tscn::PackedScene::4428483535166777274::1741015116::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>res://Textbox.gd
-::res://Addons/::1741015670
+::res://Addons/::1741026751
 Custom_inspector.gd::GDScript::-1::1741015116::0::1::::<>Node2D<>::
 eeee.gd::GDScript::-1::1741015116::0::1::::<>Area2D<>::
 Enemy_stats.gd::GDScript::-1::1741015116::0::1::::NPC_stats<>Node2D<>::
@@ -65,12 +65,12 @@ Basico_combate.tscn::PackedScene::1607698883855270164::1741015116::0::1::::<><>:
 Combate.gd::GDScript::-1::1741015116::0::1::::<>Node2D<>::
 ::res://Fonts/::1741015116
 Combat_menu.tres::Theme::6260677458176662213::1741015116::0::1::::<><>::uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf
-::res://Fonts/ldfcomicsans-font/::1741015253
+::res://Fonts/ldfcomicsans-font/::1741027141
 info.txt::TextFile::-1::1741015116::0::1::::<><>::
-Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1741015116::1741015253::1::::<><>::
-Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1741015116::1741015253::1::::<><>::
-Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1741015116::1741015253::1::::<><>::
-Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1741015116::1741015253::1::::<><>::
+Ldfcomicsans-jj7l.ttf::FontFile::5455712321289802502::1741015116::1741027141::1::::<><>::
+Ldfcomicsansbold-zgma.ttf::FontFile::1455116053613772833::1741015116::1741027141::1::::<><>::
+Ldfcomicsanshairline-5PmL.ttf::FontFile::809459794058717639::1741015116::1741027141::1::::<><>::
+Ldfcomicsanslight-6dZo.ttf::FontFile::5008688069458907892::1741015116::1741027141::1::::<><>::
 ::res://Global/::1741015116
 Game_control.gd::GDScript::-1::1741015116::0::1::::<>Node<>::
 Music.gd::GDScript::-1::1741015116::0::1::::<>Node<>::
@@ -90,10 +90,10 @@ hacha.png::CompressedTexture2D::2650519062861763193::1741015116::1741015253::1::
 objetos.gd::GDScript::-1::1741015116::0::1::::<>Area2D<>::
 objetos.tscn::PackedScene::3218568723382095621::1741015116::0::1::::<><>::res://inventory/items/objetos.gd
 veneno.png::CompressedTexture2D::1182719246731706633::1741015116::1741015253::1::::<><>::
-::res://Maps/::1741022664
+::res://Maps/::1741026752
 hub.tscn::PackedScene::8432443394854468202::1741015116::0::1::::<><>::uid://1rclml3p5d3c::::res://Texture/TX Tileset Grass.png
 Manager.gd::GDScript::-1::1741015116::0::1::::<>Node2D<>::
-Test_map.tscn::PackedScene::669239784417098673::1741022664::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Guy.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://b7xvq80mgcggl::::res://Texture/Misc/Food.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Merchant.tscn<>uid://daaywk0my6qsw::::res://Characters/Overworld/Friendly/Guy2.tscn<>uid://dumlg6mhrijpa::::res://Characters/Overworld/Friendly/Guy3.tscn<>uid://cylangw0sb7mt::::res://transitions/transtion.tscn<>uid://cbg2ew5x62k23::::res://Characters/Overworld/Friendly/Guy4.tscn
+Test_map.tscn::PackedScene::669239784417098673::1741026752::0::1::::<><>::res://Maps/Manager.gd<>uid://bqry4a0o2fpul::::res://Characters/PLayable characters/RPG_character.tscn<>uid://b2sqgbnkfdh03::::res://Texture/Hub/Tileset_Road.png<>uid://b7opfhs7jg6kc::::res://Characters/Overworld/Friendly/Guy.tscn<>uid://du2u6x1x3jlx3::::res://Texture/Hub/Tileset_Ground.png<>uid://b7xvq80mgcggl::::res://Texture/Misc/Food.png<>uid://cgmma0id87dkx::::res://Texture/Hub/Tiles.png<>uid://ckemtjvnh0m3v::::res://Texture/Hub/Water+.png<>uid://bub8aq4yvpxqk::::res://Texture/Hub/Tileset_RockSlope.png<>uid://d0d3ng730bvru::::res://Texture/Hub/Tileset_RockSlope_Simple.png<>uid://c0ey2gccucnk6::::res://Texture/Hub/Props.png<>uid://vh6ygcmwgv3y::::res://Texture/Hub/Trees_Bushes.png<>uid://3to5abwx1736::::res://Texture/Hub/Tileset_Water.png<>uid://c5lducn6wfwf6::::res://Texture/Hub/Props2.png<>uid://8njyus51vpf2::::res://Characters/Overworld/Friendly/Merchant.tscn<>uid://daaywk0my6qsw::::res://Characters/Overworld/Friendly/Guy2.tscn<>uid://dumlg6mhrijpa::::res://Characters/Overworld/Friendly/Guy3.tscn<>uid://cbg2ew5x62k23::::res://Characters/Overworld/Friendly/Guy4.tscn
 ::res://Maps/Basico/::1741015253
 ManagerBasico.gd::GDScript::-1::1741015116::0::1::::<>Node2D<>::
 medieval tileset exterior.png::CompressedTexture2D::4269389675149101814::1741015116::1741015253::1::::<><>::
@@ -108,9 +108,10 @@ manager.tscn::PackedScene::1975101101974686306::1741015116::0::1::::<><>::res://
 ::res://Misc/::1741015116
 Transition.gd::GDScript::-1::1741015116::0::1::::<>CanvasLayer<>::
 Transition.tscn::PackedScene::7109273025674359300::1741015116::0::1::::<><>::res://Misc/Transition.gd
-::res://Music/::1741015253
+::res://Music/::1741041438
 Battle Theme.mp3::AudioStreamMP3::4373630915506727959::1741015116::1741015253::1::::<><>::
 Hub theme.mp3::AudioStreamMP3::9171114081681542987::1741015116::1741015253::1::::<><>::
+LoadTheme.mp3::AudioStreamMP3::6760771791159826186::1741041402::1741041462::1::::<><>::
 ::res://Sfx/::1741015253
 menu-move.ogg::AudioStreamOggVorbis::7174618338064117733::1741015116::1741015253::1::::<><>::
 rpg-text-speech-sound-131477.mp3::AudioStreamMP3::4603006631769053900::1741015116::1741015253::1::::<><>::
@@ -122,15 +123,17 @@ Magia_I.tres::Resource/Skill::2971591566347499612::1741015116::0::1::::<><>::res
 Corte.tres::Resource/Skill::7500597328874553020::1741015116::0::1::::<><>::res://Addons/Skills.gd
 Estocada.tres::Resource/Skill::9007185185730954058::1741015116::0::1::::<><>::res://Addons/Skills.gd
 Puñalada_Eterea.tres::Resource/Skill::8399077444365487525::1741015116::0::1::::<><>::res://Addons/Skills.gd
-::res://stats/::1741017536
+::res://stats/::1741026752
 ataque.png::CompressedTexture2D::7377143336051651430::1741015116::1741015253::1::::<><>::
 defensa.png::CompressedTexture2D::110466871415839432::1741015116::1741015253::1::::<><>::
 magia.png::CompressedTexture2D::626117767910579172::1741015116::1741015253::1::::<><>::
-stats.gd::GDScript::-1::1741017536::0::1::::<>CanvasLayer<>::
-stats.tscn::PackedScene::8187137251108125494::1741017536::0::1::::<><>::res://stats/stats.gd<>uid://dddsqcycif3ly::::res://stats/ataque.png<>uid://i6kck18m42i7::::res://stats/magia.png<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://btrmxpso3ocm::::res://stats/defensa.png<>uid://dyhhble6v6hoe::::res://stats/velocidad.png<>uid://lk215mrwtbwm::::res://stats/vida.png<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://fctf1pb8qdsj::::res://Textbox.tres
+stats.gd::GDScript::-1::1741026752::0::1::::<>CanvasLayer<>::
+stats.tscn::PackedScene::8187137251108125494::1741026752::0::1::::<><>::res://stats/stats.gd<>uid://dddsqcycif3ly::::res://stats/ataque.png<>uid://i6kck18m42i7::::res://stats/magia.png<>uid://bxntsx7xb0kfc::::res://font.tres<>uid://btrmxpso3ocm::::res://stats/defensa.png<>uid://dyhhble6v6hoe::::res://stats/velocidad.png<>uid://lk215mrwtbwm::::res://stats/vida.png<>uid://cjy11xjo0p2xe::::res://Fonts/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf<>uid://fctf1pb8qdsj::::res://Textbox.tres
 velocidad.png::CompressedTexture2D::8858672332787626404::1741015116::1741015253::1::::<><>::
 vida.png::CompressedTexture2D::794408442045883412::1741015116::1741015253::1::::<><>::
-::res://Texture/::1741015253
+::res://Texture/::1741037398
+fondoUDO.png::CompressedTexture2D::4807687210225650917::1741029617::1741029664::1::::<><>::
+Logo.png::CompressedTexture2D::8355862874184518035::1741037343::1741037398::1::::<><>::
 TX Plant.png::CompressedTexture2D::8913898180983251626::1741015116::1741015253::1::::<><>::
 TX Player.png::CompressedTexture2D::1292032670716181570::1741015116::1741015253::1::::<><>::
 TX Props.png::CompressedTexture2D::2129109439628924678::1741015116::1741015253::1::::<><>::
@@ -206,7 +209,7 @@ Wizard-Walk.png::CompressedTexture2D::4809825056354027866::1741015116::174101525
 ::res://Texture/Shadows/::1741015253
 TX Shadow Plant.png::CompressedTexture2D::7399369018501893942::1741015116::1741015253::1::::<><>::
 TX Shadow.png::CompressedTexture2D::3603960063265932234::1741015116::1741015253::1::::<><>::
-::res://transitions/::1741022664
-cover2.png::CompressedTexture2D::3406174844307698997::1738935440::1741015695::1::::<><>::
-transtion.gd::GDScript::-1::1741022052::0::1::::<>CanvasLayer<>::
-transtion.tscn::PackedScene::6480105335600214899::1741022664::0::1::::<><>::res://transitions/transtion.gd
+::res://transitions/::1741027141
+cover2.png::CompressedTexture2D::3406174844307698997::1741026752::1741027141::1::::<><>::
+transtion.gd::GDScript::-1::1741026752::0::1::::<>CanvasLayer<>::
+transtion.tscn::PackedScene::6480105335600214899::1741026752::0::1::::<><>::res://transitions/transtion.gd

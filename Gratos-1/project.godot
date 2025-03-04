@@ -23,7 +23,7 @@ Manager="*res://Maps/Warp/manager.tscn"
 
 [editor]
 
-movie_writer/movie_file="C:/Users/dejam/Desktop/Godot/Projects/Gratos/Gratos-1/Test.avi"
+movie_writer/movie_file="/home/jdam/Documentos/UDO/Gratos/Gratos-1/Test.avi"
 
 [editor_plugins]
 

@@ -1,3 +1,9 @@
-res://Maps/Test_map.tscn
-res://transitions/transtion.tscn
+res://loading.tscn
+res://loading.gd
+res://font2.tres
+res://Menu.gd
+res://Menu.tscn
+res://selec_personaje.tscn
+res://selec_personaje.gd
 res://transitions/transtion.gd
+res://transitions/transtion.tscn

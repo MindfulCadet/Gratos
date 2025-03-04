@@ -118,3 +118,8 @@ func comprobar(grupo, posibilidades):
 			return true
 	return false
 	
+
+
+
+func _on_ready() -> void:
+	$Transtion._on_play()
