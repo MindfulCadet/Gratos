@@ -4,6 +4,7 @@ extends Node
 var peer
 var port = 9999
 var host_id = 0
+var carga = load("res://loading.tscn").instantiate()
 
 # Llama a una funcion segun el estado del jugador
 func _ready():
@@ -12,8 +13,10 @@ func _ready():
 	multiplayer.peer_disconnected.connect(peer_disconnected)
 	multiplayer.connected_to_server.connect(connected_to_server)
 	multiplayer.connection_failed.connect(connection_failed)
-
-func peer_connected(id):
+	$Transtion2._on_play()
+	$cleaner2.start()
+	
+func peer_connected(_id):
 	print("Player connected " + %Player_name.text)
 	
 func peer_disconnected(id):
@@ -35,15 +38,15 @@ func connection_failed():
 
 #Todos los jugadores llaman a la funcion (guarda informacion de los mismos)
 @rpc("any_peer")
-func player_info(name,id):
+func player_info(nameP,id):
 	if !PlayerHandle.players.has(id):
 		PlayerHandle.players[id] = {
-			"name" : name,
+			"name" : nameP,
 			"id" : id,
 			"character" : null,
 			"skills" : null,
-			"level": 1,
-			"stats": null,
+			"level":1,
+			"stats":null
 		}
 
 
@@ -54,10 +57,12 @@ func player_info(name,id):
 #Inicia el juego al presionar el boton de iniciar 
 @rpc("any_peer", "call_local")
 func StartGame():
-	print("Game started" + %Player_name.text)
-	var carga = load("res://loading.tscn").instantiate()
-	get_tree().root.add_child(carga)
-	$Control.visible = false
+	$Transtion.visible = true
+	$Transtion._on_play()
+	$Control/AnimationPlayer.play(("hide"))
+	$cleaner.start()
+
+	
 
 func _on_play_button_down():
 	peer = ENetMultiplayerPeer.new()
@@ -68,7 +73,7 @@ func _on_play_button_down():
 	player_info(%Player_name.text, host_id)
 
 
-func _on_ip_text_submitted(new_string: String):
+func _on_ip_text_submitted(_new_string: String):
 	_on_join_pressed()
 
 
@@ -87,3 +92,13 @@ func _on_button_pressed():
 @rpc("any_peer", "call_local")
 func _on_sprite_button_pressed():
 	_on_button_pressed()
+
+
+func _on_cleaner_timeout() -> void:
+	$Control.visible = false
+	get_tree().root.add_child(carga)
+	carga.visible = true
+
+
+func _on_cleaner_2_timeout() -> void:
+	$Transtion2.visible = false
