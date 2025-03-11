@@ -1,3 +1,7 @@
+res://Maps/DEBE
+res://Texture/Hub
+res://Texture
+res://Texture/NPC/Friendly
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Maps/Warp
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Combat
 res://Characters/PLayable characters
@@ -16,8 +20,4 @@ res://Texture/Playable Characters/Character sprite/Wizard
 res://Texture/Playable Characters/Character sprite/Barbarian
 res://Texture/Playable Characters/Character sprite/Archer
 res://Characters/PLayable characters/Scenes
-res://Texture/Playable Characters/Character sprite/Knight
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1
-res://Misc
-res://Global
-res://Addons
