@@ -38,6 +38,7 @@ func _on_si_pressed():
 		deshabilitar.rpc(1)
 
 
+		#print(PlayerHandle.players[multiplayer.get_unique_id()])
 				
 	elif animacion.get_current_animation() == "selection2":
 		animacion.stop()
@@ -61,7 +62,8 @@ func _on_si_pressed():
 #Detiene la animación de confirmación para poder seleccionar otro personaje
 func _on_no_pressed():
 	animacion.stop()
-
+#COLOCAR QUE SE AÑADAN LOS PERSONAJES EN BASE A LA LISTA
+#A VER SI ASI LOS AÑADE BIEN
 
 #deshabilita los personajes seleccionados y
 #añade a una lista los personajes seleccionados
@@ -95,24 +97,25 @@ func deshabilitar(nro):
 #si se cumple, avanza y muestra el juego
 func revision():
 	var cantidad = personajes.size()
-	if tamaño == 1:
-		var game = load("res://Maps/Test_map.tscn").instantiate()
+	if cantidad == 1:
+		var game = load("res://Maps/Test_map2.tscn").instantiate()
 		get_tree().root.add_child(game)
 		$".".visible = false
-	else:
-		if cantidad >= 2 and comprobar(personajes, posibilidades):
-			var game = load("res://Maps/Test_map.tscn").instantiate()
+	'''else:
+		if cantidad >= 2:
+			var game = load("res://Maps/Test_map2.tscn").instantiate()
 			get_tree().root.add_child(game)
-			$".".visible = false
+			$".".visible = false'''
+	
 
-func comprobar(grupo, posibilidades):
-	for i in PlayerHandle.ids:
-		if PlayerHandle.players[i].character != null:
-			contador += 1
-		elif PlayerHandle.players[i].character == null:
-			PlayerHandle.players[i].character = personajes[contador]
-	for i in posibilidades:
-		if i[0] in grupo and i[1] in grupo:
-			return true
-	return false
+
+func _on_ready() -> void:
+	$Transtion._on_play()
+	$cleaner.start()
+	
+#
+#
+#
+func _on_cleaner_timeout() -> void:
+	$Transtion.visible = false
 	
