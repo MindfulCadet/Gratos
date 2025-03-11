@@ -4,3 +4,15 @@ res://Maps/Test_map.tscn
 res://Maps/DEBE/DEBE.tres
 res://Characters/Overworld/Friendly/Hub/Guy7.tscn
 res://Characters/Overworld/Friendly/Hub/Guy8.tscn
+res://Characters/PLayable characters/Scenes/Classes.gd
+res://Maps/Warp/Global.gd
+res://Maps/Manager.gd
+res://Characters/Overworld/npc.gd
+res://inventory/items/objetos.gd
+res://Characters/PLayable characters/RPG_character.gd
+res://selec_personaje.gd
+res://inventory/slot.gd
+res://Textbox.gd
+res://Characters/Overworld/Enemies/Textbox_boss.gd
+res://transitions/transtion.gd
+res://Menu.tscn
