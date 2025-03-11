@@ -1,7 +1,10 @@
-res://Maps/DEBE
 res://Texture/Hub
-res://Texture
+res://Maps/DEBE
+res://Characters/Overworld/Enemies
+res://Texture/NPC/Werewolf
 res://Texture/NPC/Friendly
+res://Texture/Playable Characters/Character sprite/Archer
+res://Texture
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Maps/Warp
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Combat
 res://Characters/PLayable characters
@@ -17,7 +20,4 @@ C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Global
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1/Maps
 res://Texture/NPC/Orc
 res://Texture/Playable Characters/Character sprite/Wizard
-res://Texture/Playable Characters/Character sprite/Barbarian
-res://Texture/Playable Characters/Character sprite/Archer
-res://Characters/PLayable characters/Scenes
 C:/Users/dejam/Desktop/Godot/Godot_4.3/Projects/Gratos/Gratos-1

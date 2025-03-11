@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://jsgjtm8opnlp"]
+[gd_scene load_steps=37 format=3 uid="uid://jsgjtm8opnlp"]
 
 [ext_resource type="Script" path="res://Maps/Manager.gd" id="1_8sk3l"]
 [ext_resource type="PackedScene" uid="uid://bqry4a0o2fpul" path="res://Characters/PLayable characters/RPG_character.tscn" id="2_ca3qn"]
@@ -22,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://q36hipp17qlt" path="res://inventory/items/veneno.png" id="20_0dkbq"]
 [ext_resource type="PackedScene" uid="uid://bqkomcagxpo2o" path="res://Characters/Overworld/Friendly/Hub/Guy6.tscn" id="21_pu3yv"]
 [ext_resource type="Texture2D" uid="uid://bfwe46ptpumjg" path="res://inventory/items/espada.png" id="22_pqvqw"]
+[ext_resource type="PackedScene" uid="uid://b4iadj235nxfe" path="res://teleport/teleport_out.tscn" id="23_sreak"]
+[ext_resource type="PackedScene" uid="uid://dugt20m6de2at" path="res://Maps/DEBE/DEBE.tscn" id="24_0jf3b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v2mmv"]
 texture = ExtResource("3_0seik")
@@ -2367,3 +2369,9 @@ image = ExtResource("22_pqvqw")
 clase_de_item = "caballero"
 nameObj = ""
 nivel_del_item = "epico"
+
+[node name="TeleportOut" parent="." instance=ExtResource("23_sreak")]
+position = Vector2(-1360, -145)
+map = ExtResource("24_0jf3b")
+new_x = 576.0
+new_y = 627.0

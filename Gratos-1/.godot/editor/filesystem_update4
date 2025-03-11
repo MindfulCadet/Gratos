@@ -1,11 +1,3 @@
-res://Menu.tscn
 res://Maps/DEBE/DEBE.tscn
-res://Characters/Overworld/Friendly/Hub/Guy7.tscn
-res://Maps/DEBE/debe.gd
-res://selec_personaje.gd
+res://teleport/teleport_out.gd
 res://Maps/Test_map.tscn
-res://selec_personaje.tscn
-res://loading.tscn
-res://Characters/Overworld/npc.gd
-res://Maps/DEBE/DEBE.tres
-res://Maps/DEBE/Test_map.tres
