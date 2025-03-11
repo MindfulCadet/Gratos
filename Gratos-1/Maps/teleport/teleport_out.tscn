@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4iadj235nxfe"]
 
-[ext_resource type="Script" path="res://teleport/teleport_out.gd" id="1_ck53y"]
+[ext_resource type="Script" path="res://Maps/DEBE/teleport/teleport_out.gd" id="1_ck53y"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4h07o"]
 

@@ -1,7 +1,7 @@
-[gd_scene load_steps=48 format=3 uid="uid://crv8m4hfvthl8"]
+[gd_scene load_steps=50 format=3 uid="uid://crv8m4hfvthl8"]
 
-[ext_resource type="Script" uid="uid://bh73hh4geudq6" path="res://Maps/Basico/MissionManager.gd" id="1_bi2v8"]
-[ext_resource type="Script" uid="uid://d0fuin1i00ujd" path="res://Maps/Basico/ManagerBasico.gd" id="1_oo1mi"]
+[ext_resource type="Script" path="res://Maps/Basico/MissionManager.gd" id="1_bi2v8"]
+[ext_resource type="Script" path="res://Maps/Basico/ManagerBasico.gd" id="1_oo1mi"]
 [ext_resource type="Texture2D" uid="uid://1rclml3p5d3c" path="res://Texture/TX Tileset Grass.png" id="1_tsqjm"]
 [ext_resource type="PackedScene" uid="uid://bqry4a0o2fpul" path="res://Characters/PLayable characters/RPG_character.tscn" id="2_ntoig"]
 [ext_resource type="Texture2D" uid="uid://devctucr0iukf" path="res://Texture/TX Struct.png" id="2_tx5pt"]
@@ -19,6 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://8qnwjfw5imyx" path="res://Maps/Basico/NPCs/NPCBoss.tscn" id="17_w88b6"]
 [ext_resource type="Texture2D" uid="uid://cmf5kjc5w163n" path="res://Texture/CatPackFree/Box3.png" id="18_5gypr"]
 [ext_resource type="Texture2D" uid="uid://13l1f7iy4e40" path="res://Texture/CatPackFree/Idle.png" id="19_tad15"]
+[ext_resource type="PackedScene" uid="uid://b4iadj235nxfe" path="res://Maps/teleport/teleport_out.tscn" id="20_f3qx8"]
+[ext_resource type="PackedScene" uid="uid://jsgjtm8opnlp" path="res://Maps/Test_map.tscn" id="21_juwjw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5l2dp"]
 texture = ExtResource("1_tsqjm")
@@ -3118,6 +3120,12 @@ position = Vector2(853, 517)
 scale = Vector2(0.831498, 0.777433)
 sprite_frames = SubResource("SpriteFrames_3ljsd")
 animation = &"Idle"
+
+[node name="TeleportOut" parent="." instance=ExtResource("20_f3qx8")]
+position = Vector2(1656, 249)
+map = ExtResource("21_juwjw")
+new_x = 543.0
+new_y = -141.0
 
 [connection signal="area_entered" from="Area2D" to="Node2D" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Caja" to="Node2D" method="_on_caja_area_entered"]

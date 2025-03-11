@@ -3,11 +3,11 @@
 [ext_resource type="Script" path="res://Maps/Manager.gd" id="1_20cln"]
 [ext_resource type="PackedScene" uid="uid://bqry4a0o2fpul" path="res://Characters/PLayable characters/RPG_character.tscn" id="2_s84d1"]
 [ext_resource type="TileSet" uid="uid://wpd5fx3rv17" path="res://Maps/DEBE/DEBE.tres" id="3_peu1j"]
+[ext_resource type="Script" path="res://Maps/teleport/teleport_out.gd" id="5_b41aj"]
 [ext_resource type="PackedScene" uid="uid://cpx84f1akkrn7" path="res://Characters/Overworld/Friendly/Hub/Guy7.tscn" id="6_vpq6r"]
-[ext_resource type="PackedScene" uid="uid://jsgjtm8opnlp" path="res://Maps/Test_map.tscn" id="10_o3rc1"]
 [ext_resource type="PackedScene" uid="uid://du2kf33srowsh" path="res://Characters/Overworld/Friendly/Hub/Guy8.tscn" id="17_v654y"]
 [ext_resource type="PackedScene" uid="uid://cbqked6ogjdiv" path="res://Characters/Overworld/Enemies/Dorta.tscn" id="18_cv5nb"]
-[ext_resource type="PackedScene" uid="uid://b4iadj235nxfe" path="res://teleport/teleport_out.tscn" id="19_qjnl8"]
+[ext_resource type="PackedScene" path="res://Maps/DEBE/teleport/teleport_out.tscn" id="19_qjnl8"]
 
 [node name="Debe" type="Node2D"]
 script = ExtResource("1_20cln")
@@ -43,7 +43,7 @@ position = Vector2(247, 345)
 
 [node name="TeleportOut" parent="." instance=ExtResource("19_qjnl8")]
 position = Vector2(576, 627)
-map = ExtResource("10_o3rc1")
+script = ExtResource("5_b41aj")
 new_x = -1360.0
 new_y = -145.0
 

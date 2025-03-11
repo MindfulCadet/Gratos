@@ -14,7 +14,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):	
-		var new_map = map.instantiate()
+		var new_map = load(map.get_path()).instantiate()
 		new_map.RPG_character = load("res://Characters/PLayable characters/RPG_character.tscn")
 		Manager.player_last_position = Vector2(new_x,new_y)
 		get_parent().get_parent().add_child(new_map)
