@@ -56,15 +56,18 @@ func _on_basic_menu_item_clicked(index, at_position, mouse_button_index):
 				item.visible = true
 				current_menu = item.name
 			3: #Permite huir del combate
-				Music.select.play()
-				$"Container Alpha".visible = false
-				$Textbox.dialogue("Escape exitoso")
-				$Textbox.show_textbox()
-				get_tree().create_timer(1)
-				if len($Textbox.text_queue) == 0:
-					Music.enemigo.stop()
-					#get_tree().change_scene_to_file(world)
-					Manager.change_to(get_parent().get_tree().root, "Combate")
+				if Manager.boss != true:
+					Music.select.play()
+					$"Container Alpha".visible = false
+					$Textbox.dialogue("Escape exitoso")
+					$Textbox.show_textbox()
+					get_tree().create_timer(1)
+					if len($Textbox.text_queue) == 0:
+						Music.enemigo.stop()
+						#get_tree().change_scene_to_file(world)
+						Manager.change_to(get_parent().get_tree().root, "Combate")
+				else: 
+					pass
 					
 
 

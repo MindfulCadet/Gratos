@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var inside = false
-
+var interactions = 0
 
 func _ready():
 	if $Sprite is AnimatedSprite2D:
@@ -14,15 +14,15 @@ func Show_textbox():
 		for index in range(len(%Node2D.resource.Dialogue)):
 			%Textbox.dialogue(%Node2D.resource.Dialogue[index])
 		%Textbox.show_textbox()
+		interactions += 1
+		Manager.boss = true
 		Manager.talking = true
-
-	elif !%Node2D.resource.Friendly:
-		%Textbox.visible = false
 	
 func _process(delta):
+	if interactions == 1 and $Textbox.textbox.visible == false:
+		Manager.change_to(get_parent().get_parent(),"Map")
 	if %Node2D.resource.Friendly:
 		Show_textbox()
-			
 		
 func _physics_process(delta):
 	move_and_slide()
