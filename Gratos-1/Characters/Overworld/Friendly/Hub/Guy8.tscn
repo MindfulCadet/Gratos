@@ -82,6 +82,7 @@ flip_h = true
 
 [node name="Textbox" parent="." instance=ExtResource("3_7y4yu")]
 unique_name_in_owner = true
+visible = false
 
 [node name="Textboxsfx" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true

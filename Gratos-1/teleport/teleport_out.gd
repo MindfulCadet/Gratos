@@ -3,10 +3,11 @@ extends Node2D
 @export var new_x:float
 @export var new_y:float
 
-
+	
 var inside = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	print(map)
 	pass # Replace with function body.
 
 

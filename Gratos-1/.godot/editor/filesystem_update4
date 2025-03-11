@@ -1,3 +1,6 @@
 res://Maps/DEBE/DEBE.tscn
 res://teleport/teleport_out.gd
 res://Maps/Test_map.tscn
+res://Maps/DEBE/DEBE.tres
+res://Characters/Overworld/Friendly/Hub/Guy7.tscn
+res://Characters/Overworld/Friendly/Hub/Guy8.tscn
